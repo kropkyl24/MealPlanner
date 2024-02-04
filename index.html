@@ -1,0 +1,130 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Example</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 1800px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .single-box {
+            width: 100%;
+            border: 1px solid black;
+            padding: 12px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        th:nth-child(1),
+        td:nth-child(1) {
+            width: 50%;
+            text-align: left;
+        }
+
+        th:nth-child(2),
+        td:nth-child(2) {
+            width: 15%;
+            text-align: left;
+        }
+
+        th:nth-child(3),
+        td:nth-child(3) {
+            width: 35%;
+            text-align: left;
+        }
+
+        tr:nth-child(1) th,
+        tr:nth-child(1) td {
+            height: 300px;
+            font-size: 40px;
+        }
+
+        tr:nth-child(2) td {
+            text-align: center;
+        }
+
+        .custom-box {
+            text-align: center;
+        }
+
+        tr:nth-child(5) td,
+        tr:nth-child(6) td,
+        tr:nth-child(7) td,
+        tr:nth-child(8) td,
+        tr:nth-child(9) td,
+        tr:nth-child(10) td {
+            height: 30px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="single-box">
+        Box Above Table
+    </div>
+    <table>
+        <tr>
+            <th><img src="https://cdn.theatlantic.com/thumbor/M06vW99rPeKyOWSNuCALQUTqMVs=/1500x844/media/img/photo/2019/10/winners-of-the-wildlife-photographe/w01_Bao/original.jpg" alt="Wildlife Photo" width="300" height="200"></th>
+            <th>Meal Planner</th>
+            <th>Recipe index #:</th>
+        </tr>
+        <tr>
+            <td><strong>Week Starting</strong></td>
+            <td class="custom-box"><strong>2/15/18</strong></td>
+            <td><strong>Instructions</strong></td>
+        </tr>
+        <tr>
+            <td><strong>Day of the week</strong></td>
+            <td><strong>Recipe Name</strong></td>
+            <td rowspan="8">Add the name of the recipe under the column Recipe Name</td>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Spinach Feta Pizza</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>My New Recipe</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
